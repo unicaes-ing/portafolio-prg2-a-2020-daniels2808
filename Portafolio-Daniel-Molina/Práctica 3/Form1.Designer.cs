@@ -28,88 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lstTabla = new System.Windows.Forms.ListBox();
+            this.btngenerar = new System.Windows.Forms.Button();
+            this.Label1 = new System.Windows.Forms.Label();
+            this.txtnumero = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // lstTabla
             // 
-            this.button1.Location = new System.Drawing.Point(69, 141);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Validar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.lstTabla.FormattingEnabled = true;
+            this.lstTabla.Location = new System.Drawing.Point(11, 55);
+            this.lstTabla.Name = "lstTabla";
+            this.lstTabla.Size = new System.Drawing.Size(100, 147);
+            this.lstTabla.TabIndex = 7;
             // 
-            // maskedTextBox1
+            // btngenerar
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(69, 12);
-            this.maskedTextBox1.Mask = "LL-00000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 1;
+            this.btngenerar.Location = new System.Drawing.Point(118, 24);
+            this.btngenerar.Name = "btngenerar";
+            this.btngenerar.Size = new System.Drawing.Size(75, 23);
+            this.btngenerar.TabIndex = 5;
+            this.btngenerar.Text = "Generar";
+            this.btngenerar.UseVisualStyleBackColor = true;
+            this.btngenerar.Click += new System.EventHandler(this.btngenerar_Click);
             // 
-            // label1
+            // Label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Código";
+            this.Label1.AutoSize = true;
+            this.Label1.Location = new System.Drawing.Point(12, 9);
+            this.Label1.Name = "Label1";
+            this.Label1.Size = new System.Drawing.Size(92, 13);
+            this.Label1.TabIndex = 6;
+            this.Label1.Text = "Número de Tabla:";
             // 
-            // textBox1
+            // txtnumero
             // 
-            this.textBox1.Location = new System.Drawing.Point(69, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(69, 88);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 50);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Producto";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 95);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Precio";
+            this.txtnumero.Location = new System.Drawing.Point(11, 28);
+            this.txtnumero.Name = "txtnumero";
+            this.txtnumero.Size = new System.Drawing.Size(100, 20);
+            this.txtnumero.TabIndex = 4;
+            this.txtnumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnumero_KeyPress);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(219, 199);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.lstTabla);
+            this.Controls.Add(this.btngenerar);
+            this.Controls.Add(this.Label1);
+            this.Controls.Add(this.txtnumero);
             this.Name = "Form1";
-            this.Text = "Producto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,13 +88,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        internal System.Windows.Forms.ListBox lstTabla;
+        internal System.Windows.Forms.Button btngenerar;
+        internal System.Windows.Forms.Label Label1;
+        internal System.Windows.Forms.TextBox txtnumero;
     }
 }
 

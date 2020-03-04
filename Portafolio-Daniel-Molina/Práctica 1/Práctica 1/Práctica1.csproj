@@ -1,17 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C15D7F2B-E73A-46C7-9C37-2854D3E85D86}</ProjectGuid>
+    <ProjectGuid>{2F687792-EA85-4EC0-8338-2A7CDC38CB27}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Práctica_1</RootNamespace>
-    <AssemblyName>Práctica 1</AssemblyName>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,16 +47,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Promedio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Promedio.Designer.cs">
+      <DependentUpon>Promedio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistemas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistemas.Designer.cs">
+      <DependentUpon>Sistemas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inversiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inversiones.Designer.cs">
+      <DependentUpon>Inversiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Libreria Universitario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libreria Universitario.Designer.cs">
+      <DependentUpon>Libreria Universitario.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Promedio.resx">
+      <DependentUpon>Promedio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistemas.resx">
+      <DependentUpon>Sistemas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inversiones.resx">
+      <DependentUpon>Inversiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libreria Universitario.resx">
+      <DependentUpon>Libreria Universitario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,6 +93,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -80,4 +109,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>

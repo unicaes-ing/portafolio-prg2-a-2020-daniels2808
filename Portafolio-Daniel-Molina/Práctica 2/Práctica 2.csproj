@@ -1,17 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{598CFE61-5237-487A-A651-C575EAFDDFE4}</ProjectGuid>
+    <ProjectGuid>{566AD969-327F-4089-A1B4-E76BA7956F29}</ProjectGuid>
     <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Práctica_2</RootNamespace>
     <AssemblyName>Práctica 2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,14 +47,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Inicio de sesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Inicio de sesion.Designer.cs">
+      <DependentUpon>Inicio de sesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ROMANO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROMANO.Designer.cs">
+      <DependentUpon>ROMANO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Descuentos de 0 a 20.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Descuentos de 0 a 20.Designer.cs">
+      <DependentUpon>Descuentos de 0 a 20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Longitudes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Longitudes.Designer.cs">
+      <DependentUpon>Longitudes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Inicio de sesion.resx">
+      <DependentUpon>Inicio de sesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Longitudes.resx">
+      <DependentUpon>Longitudes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ROMANO.resx">
+      <DependentUpon>ROMANO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Descuentos de 0 a 20.resx">
+      <DependentUpon>Descuentos de 0 a 20.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +93,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -77,4 +109,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>
