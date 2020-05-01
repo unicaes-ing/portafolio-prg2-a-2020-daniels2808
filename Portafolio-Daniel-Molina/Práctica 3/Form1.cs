@@ -16,7 +16,6 @@ namespace Práctica_3
         {
             InitializeComponent();
         }
-
         private void btngenerar_Click(object sender, EventArgs e)
         {
 
