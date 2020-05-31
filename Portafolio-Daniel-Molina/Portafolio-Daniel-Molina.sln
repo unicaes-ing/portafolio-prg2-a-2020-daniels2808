@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.852
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Práctica 3", "Práctica 3\Práctica 3.csproj", "{9050C0A1-435D-432C-A08C-893AE57EFE04}"
 EndProject
@@ -16,6 +16,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Práctica 5", "Práctica 5\Práctica 5.csproj", "{BB556DB6-476A-4CB9-B7CB-EA065FA7026C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Práctica 6", "Práctica 6\Práctica 6.csproj", "{D0B70920-E287-4786-BCB5-CEAB6F75429C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Práctica 8", "Práctica 8\Práctica 8.csproj", "{1343DEF7-54F5-4B29-AA24-4E113CA4CB58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Práctica 9", "Práctica 9\Práctica 9.csproj", "{77088655-AA65-4683-B393-3E728DC8BABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Práctica 10", "Práctica 10\Práctica 10.csproj", "{97F682EB-E4FC-46A9-B13F-EFDD228363E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prácitca 11", "..\..\..\..\Desktop\Archivos de Universidad\Ciclo III\Programación II\Periodo III\Portafolio Ricardo Manrique Arana\Prácitca 11\Prácitca 11.csproj", "{9DE53CE6-AE20-4B7C-9873-24F05E544C00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +59,22 @@ Global
 		{D0B70920-E287-4786-BCB5-CEAB6F75429C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0B70920-E287-4786-BCB5-CEAB6F75429C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0B70920-E287-4786-BCB5-CEAB6F75429C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1343DEF7-54F5-4B29-AA24-4E113CA4CB58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1343DEF7-54F5-4B29-AA24-4E113CA4CB58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1343DEF7-54F5-4B29-AA24-4E113CA4CB58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1343DEF7-54F5-4B29-AA24-4E113CA4CB58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77088655-AA65-4683-B393-3E728DC8BABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77088655-AA65-4683-B393-3E728DC8BABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77088655-AA65-4683-B393-3E728DC8BABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77088655-AA65-4683-B393-3E728DC8BABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97F682EB-E4FC-46A9-B13F-EFDD228363E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97F682EB-E4FC-46A9-B13F-EFDD228363E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97F682EB-E4FC-46A9-B13F-EFDD228363E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97F682EB-E4FC-46A9-B13F-EFDD228363E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DE53CE6-AE20-4B7C-9873-24F05E544C00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DE53CE6-AE20-4B7C-9873-24F05E544C00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DE53CE6-AE20-4B7C-9873-24F05E544C00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DE53CE6-AE20-4B7C-9873-24F05E544C00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
